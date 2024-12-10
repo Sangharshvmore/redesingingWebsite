@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #282828;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li:hover {
+    background-color: #3a3a3a;
+}
+
+.sidebar nav ul li.active {
+    background-color: #6a5acd;
+    color: white;
+}
+
+.sidebar nav ul li i {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar {
+    height: 200px; /* Adjust as needed */
+    background-color: #ffffff; /* Placeholder for calendar */
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0; /* Remove default margin */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 20px; /* Space between icons */
+    cursor: pointer; /* Pointer cursor for clickable icons */
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 20px; /* Space between search bar and profile pic */
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.header-icons .icon {
+    color: rgb(255, 253, 253); /* Change this to your desired color */
+}
+
+.header-icons .icon:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+.header-icons box-icon {
+    font-size: 40px; /* Adjust size as needed */
+    color: #ffffff; /* Set icon color */
+    margin-left: 20px; /* Space between search bar and icon */
+    cursor: pointer; /* Pointer cursor for clickable icon */
+}
+
+.subjects-taken {
+    display: flex;
+    justify-content: center;
+    height: 330px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    box-sizing: border-box;
+}
+
